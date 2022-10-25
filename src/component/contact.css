@@ -1,0 +1,40 @@
+.sozial-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+ 
+ 
+ .sozial-link a
+ {
+ font-size: 30px;
+ }
+ a .face{
+   color: blue;
+ }
+ a .twitter{
+   color: rgb(167, 167, 240);
+ }
+ a .youtube{
+   color: red;
+ }
+ a .github{
+   color: black;
+ }
+ a .instagram{
+ 
+ color: red;
+ }
+ p .house {
+  font-size: 30px;
+  color: black;
+ }
+ .contact a{
+   text-decoration: none;
+   color: black;
+ }
+ p{
+   font-size: 1.5rem;
+   color: black;
+ }

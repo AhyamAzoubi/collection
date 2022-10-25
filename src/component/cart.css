@@ -1,0 +1,49 @@
+.container-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+padding: 130px;
+}
+ .cart{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+ .cart img{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius:  5px;
+}
+
+ .cart p{
+  width: 200px;
+  margin: 10px;
+}
+.quantity{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content:center ;
+}
+.quantity p{
+  width: 50px;
+  text-align: center;
+}
+.quantity button{
+  width: 50px;
+}
+.total{
+  text-align: right;
+  border-top: 1px solid black;
+}
+.remove{
+  color: red;
+  font-size: 30px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  
+}
