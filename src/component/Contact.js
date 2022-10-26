@@ -48,7 +48,7 @@ const Contact = () => {
           </a>
         </p>
         <p>
-          <a href="https://mail.google.com/">
+          <a href="https://www.google.com/intl/de/gmail/about/">
             <FaRegEnvelopeOpen className="mail" /> ahyam.azoubi@gmail.com
           </a>
         </p>

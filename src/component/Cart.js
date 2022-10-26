@@ -13,16 +13,17 @@ const Cart = () => {
   }, 0);
 
   return (
-    <div className="container-cart">
+    <div className="container ">
       {state.map((product, index) => {
         return (
-          <div className="cart" key={index}>
-            <img src={product.image} alt="" />
-            <p>{product.title}</p>
+          <div className="card mb-3" key={index}>
+            <img className="card-img-top " src={product.image} alt="" />
+            <div className="card-body">
+              <h5 className="card-title">{product.title}</h5>
+              <p className="card-text">{product.quantity * product.price}$</p>
 
-            <p>{product.quantity * product.price}$</p>
-            <div className="quantity">
               <button
+                className="btn btn-dark"
                 onClick={() => dispatch({ type: "increase", payload: product })}
               >
                 +
@@ -31,6 +32,7 @@ const Cart = () => {
               <p>{product.quantity}</p>
 
               <button
+                className="btn btn-dark"
                 onClick={() => {
                   if (product.quantity > 1) {
                     dispatch({ type: "decrease", payload: product });
@@ -41,10 +43,13 @@ const Cart = () => {
               >
                 -
               </button>
+
+              <h1
+                onClick={() => dispatch({ type: "remove", payload: product })}
+              >
+                <FaRegTrashAlt className="remove" />
+              </h1>
             </div>
-            <h1 onClick={() => dispatch({ type: "remove", payload: product })}>
-              <FaRegTrashAlt className="remove" />
-            </h1>
           </div>
         );
       })}

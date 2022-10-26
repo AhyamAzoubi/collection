@@ -13,18 +13,18 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg py-3 bg-secondary shadow-sm rounded d-flex justify-content-end">
         <ul className="d-flex justify-content-end mt-3">
           <li className="nav-item ">
-            <NavLink className="text-light" to="/">
+            <NavLink className="text-light me-2" to="/">
               Home
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink className="text-light" to="/contact">
+            <NavLink className="text-light me-2" to="/contact">
               Contact
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="text-light" to="/about">
+            <NavLink className="text-light me-2" to="/about">
               About
             </NavLink>
           </li>
